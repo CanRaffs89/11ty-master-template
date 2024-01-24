@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="/bundle.css">
 </head>
 <body>
     <main>
-        {% include "components/navbar-spaced.html" %}
+        {% include "components/navbar-spaced.html" %} <!-- Can be swapped out for navbar-centred -->
         {% block content %}{% endblock %}
     </main>
 </body>
