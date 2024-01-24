@@ -7,14 +7,7 @@
 </head>
 <body>
     <main>
-        <ul>
-            {% set navPages = collections.all | eleventyNavigation %}
-            {% for item in navPages %}
-                <li>
-                    <a href="{{ item.url }}">{{ item.key }}</a>
-                </li>
-            {% endfor %}
-        </ul>
+        {% include "components/navbar-spaced.html" %}
         {% block content %}{% endblock %}
     </main>
 </body>
