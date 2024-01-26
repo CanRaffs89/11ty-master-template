@@ -1,0 +1,58 @@
+/* Global */
+/* Colour Variables */
+:root {
+    --main: #222;
+    --secondary: #333;
+    --accent: #ccc;
+    --text-light: #fff;
+    --text-dark: #222;
+}
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    background-color: var(--text-light);
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+@media (max-width: 960px) {
+    html {
+        font-size: 0.9rem;
+    }
+}
