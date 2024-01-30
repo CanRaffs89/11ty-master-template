@@ -3,7 +3,7 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #222;
+    background-color: var(--main);
 }
 
 #nav-logo-img {
@@ -14,16 +14,16 @@ nav {
 
 .nav-link {
     text-decoration: none;
-    color: #eee;
+    color: var(--text-light);
     font-size: 1.1rem;
 }
 
 .nav-link:hover {
-    color: #ccc;
+    color: var(--accent);
 }
 
 .nav-link-active {
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid var(--accent);
 }
 
 .nav-mobile-toggle {
