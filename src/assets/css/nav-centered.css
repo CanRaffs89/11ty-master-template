@@ -1,8 +1,8 @@
-.nav-centred {
+.nav-centered {
     justify-content: center;
 }
 
-.nav-items-centred {
+.nav-items-centered {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -15,11 +15,11 @@
 }
 
 @media (min-width: 750px) {
-    .nav-items-centred > li:nth-child(2) {
+    .nav-items-centered > li:nth-child(2) {
         margin-right: 50px;
     }
     
-    .nav-items-centred > li:nth-child(3) {
+    .nav-items-centered > li:nth-child(3) {
         margin-left: 50px;
     }
 }

@@ -37,7 +37,7 @@ nav {
 }
 
 @media (max-width: 750px) {
-    .nav-items-right, .nav-items-centred {
+    .nav-items-right, .nav-items-centered {
         z-index: 200;
         margin-right: 0;
         flex-direction: column;
@@ -52,7 +52,7 @@ nav {
         transition: transform 200ms ease-in-out;
     }
 
-    .nav-items-right[data-visible="true"], .nav-items-centred[data-visible="true"] {
+    .nav-items-right[data-visible="true"], .nav-items-centered[data-visible="true"] {
         transform: translateX(0%);
     }
 
