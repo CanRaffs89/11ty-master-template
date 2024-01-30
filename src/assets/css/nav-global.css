@@ -6,6 +6,10 @@ nav {
     background-color: var(--main);
 }
 
+.nav-transparent { 
+    background-color: rgba(0,0,0,0); /* Apply this class to the nav for transparent background */ 
+}
+
 #nav-logo-img {
     height: 40px;
     width: 40px;
