@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/bundle.css">
+    <script src="assets/js/nav.js" defer></script>
 </head>
 <body>
     <main>
-        {% include "components/navbar-centred.html" %} <!-- Can be swapped out for navbar-centred -->
+        {% include "components/navbar-spaced.html" %} <!-- Can be swapped out for navbar-centred -->
         {% block content %}{% endblock %}
     </main>
 </body>
