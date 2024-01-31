@@ -8,9 +8,15 @@
     <script src="assets/js/nav.js" defer></script>
 </head>
 <body>
+    
+    {% include "components/navbar/navbar-spaced.html" %} <!-- Can be swapped out for alternate navbar -->
     <main>
-        {% include "components/navbar/navbar-spaced.html" %} <!-- Can be swapped out for navbar-centered -->
-        {% block content %}{% endblock %}
+        {% if permalink == 'index.html' %}
+            {% include "components/hero/hero-lg.html" %}
+        {% endif %}
+        <div class="content-container">
+            {% block content %}{% endblock %}
+        </div>
     </main>
 </body>
 </html>
