@@ -1,0 +1,11 @@
+{% macro headerSplit(heading, text) %}
+    <div class="header-split-container">
+        <section class="header-left">
+            <h1 id="header-main">{{ heading }}</h1>
+            <p id="header-text">{{ text }}</p>
+        </section>
+        <section class="header-right">
+            <div class="header-img"></div>
+        </section>
+    </div>
+{% endmacro %}
