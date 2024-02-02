@@ -9,10 +9,10 @@
 </head>
 <body>
     
-    {% include "components/navbar/navbar-spaced.html" %} <!-- Can be swapped out for alternate navbar -->
+    {% include "components/navbar/navbar-centered.html" %} <!-- Can be swapped out for alternate navbar -->
     <main>
         {% if permalink == 'index.html' %}
-            {% include "components/header/header-lg.html" %}
+            {% include "components/header/header-main.html" %}
         {% endif %}
         <div class="content-container">
             {% block content %}{% endblock %}
