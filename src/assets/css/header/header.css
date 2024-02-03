@@ -30,9 +30,12 @@
 }
 
 .header-right {
-    background-color: aqua;
-    height: 500px;
-    width: 500px;
+    width: 40%;
+}
+
+#header-img {
+    width: 100%;
+    height: auto;
 }
 
 #header-main, #header-text {
