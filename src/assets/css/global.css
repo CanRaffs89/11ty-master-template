@@ -30,6 +30,13 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
 li {
     list-style: none;
 }
@@ -42,6 +49,7 @@ a {
 .content-container {
     height: 100%;
     margin: 100px 1%;
+    flex: 1;
 }
 
 .sr-only {
@@ -59,6 +67,10 @@ a {
 @media (max-width: 960px) {
     html {
         font-size: 0.9rem;
+    }
+
+    main {
+        margin-top: 70px;
     }
 
     .content-container {
