@@ -1,0 +1,21 @@
+.showcase-carousel {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    overflow-x: auto;
+}
+
+.showcase-link {
+    height: 100%;
+    width: 30%;
+    margin: 0 5px;
+}
+
+.showcase-link-text {
+    color: var(--main);
+}
+
+.showcase-img {
+    object-fit: cover;
+    height: 100%;
+}

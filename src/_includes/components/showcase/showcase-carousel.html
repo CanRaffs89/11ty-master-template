@@ -1,0 +1,10 @@
+<section class="showcase-carousel">
+    {% for item in showcase.items %}
+        <li class="showcase-link">
+            <a class="showcase-link-text" href="{{ item.url }}">
+                <img class="showcase-img" src="{{ item.img }}" alt="">
+                <h3>{{ item.text }}</h3>
+            </a>
+        </li>
+    {% endfor %}
+</section>
