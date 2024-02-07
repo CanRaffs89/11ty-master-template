@@ -1,0 +1,9 @@
+<footer>
+
+{% for item in navPages %}
+    <li class="footer-navlink">
+        <a href="{{ item.url }}">{{ item.key }}</a>
+    </li>
+{% endfor %}
+
+</footer>

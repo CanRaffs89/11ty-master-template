@@ -1,0 +1,13 @@
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer-navlink {
+    margin: 0 10px;
+}
