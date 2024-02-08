@@ -7,7 +7,7 @@
       },
       {
         "text": "About",
-        "url": "/about-us/",
+        "url": "/about/",
         "img": "assets/img/peter-james-eisenhaure-PbWJY0M5hRM-unsplash.jpg"
       },
       {
@@ -16,8 +16,8 @@
         "img": "assets/img/peter-james-eisenhaure-PbWJY0M5hRM-unsplash.jpg"
       },
       {
-        "text": "Blog",
-        "url": "/blog/",
+        "text": "Gallery",
+        "url": "/gallery/",
         "img": "assets/img/peter-james-eisenhaure-PbWJY0M5hRM-unsplash.jpg"
       },
       {
