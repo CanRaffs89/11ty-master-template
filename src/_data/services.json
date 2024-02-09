@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "title":"Service 1",
+            "img": "assets/img/service-logo.svg",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "title":"Service 2",
+            "img": "assets/img/service-logo.svg",
+            "text": "Tempore aliquam, quas aliquid sed voluptate non, ipsum magni aspernatur architecto quo necessitatibus!"
+        },
+        {
+            "title":"Service 3",
+            "img": "assets/img/service-logo.svg",
+            "text": "Provident consequuntur vero praesentium velit et necessitatibus accusamus numquam!"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.service-item-title, .service-item-text {
+    padding: 10px 0;
+}
+
+.service-item {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.service-item-img {
+    height: 100px;
+}
+
+@media (max-width: 960px) {
+    .services {
+        flex-direction: column;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
