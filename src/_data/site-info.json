@@ -1,0 +1,15 @@
+{
+	"name": "Eleventy Template Site",
+	"email": "hello@mail.com",
+	"phoneHome": "020 1234 5678",
+	"phoneMobile": "07123456789",
+	"address": {
+		"lineOne": "First Address Line",
+		"lineTwo": "Second Address Line",
+		"city": "Portsmouth",
+		"county": "Hants",
+		"postcode": "PO1 0AA",
+		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+	},
+	"domain": "www.site.come"
+}
