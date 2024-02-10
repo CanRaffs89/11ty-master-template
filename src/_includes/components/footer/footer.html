@@ -1,9 +1,19 @@
 <footer>
-
-{% for item in navPages %}
-    <li class="footer-navlink">
-        <a href="{{ item.url }}">{{ item.key }}</a>
-    </li>
-{% endfor %}
-
+    <div class="footer-socials">
+        {% for item in siteInfo.socials %}
+            <a href="{{ item.link }}">
+                <img src="assets/img/nav-logo.svg" alt="{{ item.title }}">
+            </a>
+        {% endfor %}
+    </div>
+    <div class="footer-links">
+        {% for item in navPages %}
+            <li class="footer-navlink">
+                <a href="{{ item.url }}">{{ item.key }}</a>
+            </li>
+        {% endfor %}
+    </div>
+    <div class="footer-copyright">
+        <p>{{ siteInfo.name }} {% year %}</p>
+    </div>
 </footer>

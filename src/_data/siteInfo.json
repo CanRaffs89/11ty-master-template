@@ -11,5 +11,23 @@
 		"postcode": "PO1 0AA",
 		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
 	},
-	"domain": "www.site.come"
+	"domain": "www.site.com",
+	"socials": [
+		{
+			"title": "Facebook",
+			"link": "facebook.com"
+		},
+		{
+			"title": "X",
+			"link": "x.com"
+		},
+		{
+			"title": "Instagram",
+			"link": "instagram.com"
+		},
+		{
+			"title": "Youtube",
+			"link": "youtube.com"
+		}
+	]
 }
