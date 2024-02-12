@@ -1,0 +1,77 @@
+.services-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-carousel-nav label {
+    margin: 20px;
+}
+
+.services-carousel {
+    overflow: hidden;
+    width: 600px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px darkgray solid;
+    border-radius: 20px;
+}
+
+.services-carousel-nav label {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.services-carousel-nav label:hover,
+#service-button-1:checked ~ .services-carousel-nav .service-label-1,
+#service-button-2:checked ~ .services-carousel-nav .service-label-2,
+#service-button-3:checked ~ .services-carousel-nav .service-label-3 {
+    background-color: var(--accent);
+}
+
+#service-button-1:checked ~ .services-carousel .carousel-wrapper {
+    transform: translateY(0);
+}
+
+#service-button-2:checked ~ .services-carousel .carousel-wrapper {
+    transform: translateY(-100%);
+}
+
+#service-button-3:checked ~ .services-carousel .carousel-wrapper {
+    transform: translateY(-200%);
+}
+
+@media (max-width: 950px) {
+    .services-carousel-container {
+        flex-direction: column;
+    }
+
+    .services-carousel-nav label {
+        display: inline-block;
+    }
+}

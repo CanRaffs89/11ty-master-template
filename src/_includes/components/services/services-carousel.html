@@ -1,0 +1,20 @@
+<section class="services-carousel-container">
+    <input type="radio" name="services-control" id="service-button-1" hidden checked>
+    <input type="radio" name="services-control" id="service-button-2" hidden>
+    <input type="radio" name="services-control" id="service-button-3" hidden>
+    <div class="services-carousel-nav">
+        <label for="service-button-1" class="service-label-1">1</label>
+        <label for="service-button-2" class="service-label-2">2</label>
+        <label for="service-button-3" class="service-label-3">3</label>
+    </div>
+    <div class="services-carousel">
+        <div class="carousel-wrapper">
+            {% for item in services.items %}
+                <div class="carousel-item">
+                    <h2>{{ item.title }}</h2>
+                    <p>{{ item.text }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
