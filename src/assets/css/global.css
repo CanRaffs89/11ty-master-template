@@ -76,4 +76,8 @@ a {
     .content-container {
         margin: 40px 0;
     }
+
+    .hidden-on-mobile {
+        display: none;
+    }
 }

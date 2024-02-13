@@ -2,16 +2,16 @@
     <input type="radio" name="services-control" id="service-button-1" hidden checked>
     <input type="radio" name="services-control" id="service-button-2" hidden>
     <input type="radio" name="services-control" id="service-button-3" hidden>
-    <div class="services-carousel-nav">
-        <label for="service-button-1" class="service-label-1">1</label>
-        <label for="service-button-2" class="service-label-2">2</label>
-        <label for="service-button-3" class="service-label-3">3</label>
+    <div class="services-carousel-nav hidden-on-mobile">
+        <label for="service-button-1" class="service-label-1">{{ services.items[0].title }}</label>
+        <label for="service-button-2" class="service-label-2">{{ services.items[1].title }}</label>
+        <label for="service-button-3" class="service-label-3">{{ services.items[2].title }}</label>
     </div>
     <div class="services-carousel">
         <div class="carousel-wrapper">
             {% for item in services.items %}
                 <div class="carousel-item">
-                    <h2>{{ item.title }}</h2>
+                    <h2 class="carousel-item-title">{{ item.title }}</h2>
                     <p>{{ item.text }}</p>
                 </div>
             {% endfor %}
