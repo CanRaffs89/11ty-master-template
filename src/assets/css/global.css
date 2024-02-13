@@ -48,7 +48,7 @@ a {
 
 .content-container {
     height: 100%;
-    margin: 100px 1%;
+    margin: 100px 0;
     flex: 1;
 }
 
@@ -74,6 +74,6 @@ a {
     }
 
     .content-container {
-        margin: 40px;
+        margin: 40px 0;
     }
 }

@@ -3,17 +3,20 @@
         {
             "title":"Service 1",
             "img": "assets/img/service-logo.svg",
-            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            "blurb": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore inventore dolorum, eos voluptates beatae libero necessitatibus quibusdam dicta pariatur, atque rerum error? Beatae mollitia commodi provident voluptatibus neque nisi! Non?"
         },
         {
             "title":"Service 2",
             "img": "assets/img/service-logo.svg",
-            "text": "Tempore aliquam, quas aliquid sed voluptate non, ipsum magni aspernatur architecto quo necessitatibus!"
+            "blurb": "Tempore aliquam, quas aliquid sed voluptate non, ipsum magni aspernatur architecto quo necessitatibus!",
+            "text": "Libero optio non nisi praesentium quam pariatur ipsam incidunt tempora dolorem enim quo accusantium, hic cum repellendus molestiae similique tenetur quasi rem?"
         },
         {
             "title":"Service 3",
             "img": "assets/img/service-logo.svg",
-            "text": "Provident consequuntur vero praesentium velit et necessitatibus accusamus numquam!"
+            "blurb": "Provident consequuntur vero praesentium velit et necessitatibus accusamus numquam!",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit ab iste tempora debitis, accusamus repellendus assumenda quod maxime? Veniam dolorem iste earum molestiae culpa, repellendus qui recusandae voluptas dolores."
         }
     ]
 }

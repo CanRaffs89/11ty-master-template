@@ -33,7 +33,7 @@
 @media (max-width: 960px) {
     .section {
         flex-direction: column;
-        margin: 0;
+        margin: 40px;
     }
 
     .section-text, .section-img {

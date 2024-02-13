@@ -5,7 +5,7 @@
     grid-auto-columns: 37%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    margin-bottom: 40px;
+    margin: 0 10px 40px 10px;
 }
 
 .showcase-link {
@@ -33,5 +33,6 @@
 @media (max-width: 960px) {
     .showcase-carousel {
         grid-auto-columns: 62%;
+        margin: 0 0 40px 0;
     }
 }

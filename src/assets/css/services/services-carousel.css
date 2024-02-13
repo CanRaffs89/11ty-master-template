@@ -1,7 +1,8 @@
 .services-carousel-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: var(--main);
 }
 
 .services-carousel-nav label {
@@ -11,7 +12,7 @@
 .services-carousel {
     overflow: hidden;
     width: 600px;
-    height: 200px;
+    height: 300px;
     margin-left: 20px;
 }
 
@@ -19,7 +20,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .carousel-item {
@@ -30,9 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border: 2px darkgray solid;
-    border-radius: 20px;
+    color: var(--text-light);
 }
 
 .services-carousel-nav label {
@@ -52,6 +51,7 @@
 #service-button-2:checked ~ .services-carousel-nav .service-label-2,
 #service-button-3:checked ~ .services-carousel-nav .service-label-3 {
     background-color: var(--accent);
+    scale: 1.5;
 }
 
 #service-button-1:checked ~ .services-carousel .carousel-wrapper {
@@ -67,6 +67,10 @@
 }
 
 @media (max-width: 950px) {
+    .services-carousel {
+        width: auto;
+    }
+
     .services-carousel-container {
         flex-direction: column;
     }
