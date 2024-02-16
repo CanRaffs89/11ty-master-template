@@ -1,0 +1,46 @@
+.image-gallery {
+    --gap: 16px;
+    --cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-gallery > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 960px) {
+    .image-gallery {
+        --cols: 2;
+    }
+}
+
+@media (max-width: 750px) {
+    .image-gallery {
+        --cols: 1;
+    }
+}
+
+/* These classes can be added to images to create a masonry-style layout */
+@media (min-width: 750px) {
+    .image-gallery > img:nth-child(1) {
+        grid-column: span 2;
+    } 
+    
+    .image-gallery > img:nth-child(3) {
+        grid-row: span 2;
+    } 
+
+    .image-gallery > img:nth-child(7) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
