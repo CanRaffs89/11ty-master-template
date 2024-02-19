@@ -1,8 +1,7 @@
 <nav aria-label="navigation" class="nav-centered">
-    <a id="nav-logo-img" class="nav-logo-centered" href="/"><img src="assets/img/nav-logo.svg" alt=""></a>
+    <a id="nav-logo-img" class="nav-logo-centered" href="/"><img src="assets/img/icons/nav-logo.svg" alt=""></a>
     <button aria-expanded="false" class="nav-mobile-toggle"><span class="sr-only">Menu</span></button>
     <ul data-visible="false" class="nav-items-centered nav-mobile-items nav-mobile-menu-dark">
-        
         {% for item in navPages %}
             <li>
                 <a class="nav-link nav-link-light {% if item.url == page.url %} nav-link-active {% endif %}" href="{{ item.url }}">{{ item.key }}</a>

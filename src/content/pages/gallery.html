@@ -1,5 +1,6 @@
 ---
-title: 'Gallery Page'
+title: 'Gallery'
+description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quia laboriosam qui corrupti ex labore quod totam, dolorum voluptates odit odio repellat minus deleniti incidunt excepturi ratione hic recusandae animi?'
 permalink: gallery.html
 eleventyNavigation:
     key: Gallery
@@ -9,6 +10,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block content %}
+    {% import 'components/page-header/page-header.html' as macro %}
+    {{ macro.pageHeader(title, description) }}
     <div class="image-gallery">
         {% for image in images.items %}
             <img src="{{ image.src }}" alt="{{ image.altText }}">

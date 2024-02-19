@@ -75,6 +75,7 @@
     .services-carousel {
         width: auto;
         height: auto;
+        margin: 0 20px;
     }
 
     .services-carousel-container {

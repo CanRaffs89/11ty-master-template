@@ -1,5 +1,6 @@
 ---
-title: 'About Page'
+title: 'About'
+description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae distinctio sapiente deleniti quisquam modi qui fugit quas facere impedit ea est ab consequatur, dolor molestias quae, id animi labore fuga.'
 permalink: about.html
 eleventyNavigation:
     key: About
@@ -9,5 +10,7 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block content %}
-{% include "components/section/section-left.html" %}
+    {% import 'components/page-header/page-header.html' as macro %}
+    {{ macro.pageHeader(title, description) }}
+    {% include "components/section/section-left.html" %}
 {% endblock %}
