@@ -39,7 +39,6 @@
 }
 
 .services-carousel-nav label {
-    background-color: var(--secondary);
     color: var(--text-light);
     display: block;
     cursor: pointer;
@@ -47,7 +46,6 @@
     padding: 0 20px;
     line-height: 30px;
     text-align: center;
-    border-radius: 10px;
     transition: all 0.4s ease;
 }
 
@@ -55,7 +53,7 @@
 #service-button-1:checked ~ .services-carousel-nav .service-label-1,
 #service-button-2:checked ~ .services-carousel-nav .service-label-2,
 #service-button-3:checked ~ .services-carousel-nav .service-label-3 {
-    background-color: var(--accent);
+    text-decoration: underline;
     scale: 1.5;
 }
 

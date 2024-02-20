@@ -12,5 +12,15 @@ eleventyNavigation:
 {% block content %}
     {% import 'components/page-header/page-header.html' as macro %}
     {{ macro.pageHeader(title, description) }}
-    {% include "components/section/section-left.html" %}
+    {% import 'components/section/section.html' as sectionMacro %}
+    {{ sectionMacro.section(
+        "section",
+        "Ratione, explicabo!",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis ea fugit explicabo inventore mollitia expedita nam amet, eum sequi fuga accusantium eveniet libero reprehenderit dignissimos modi. Aut, sapiente nisi!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit saepe, excepturi magnam sit ad! Dolorem tenetur veritatis eum suscipit est earum, magni libero, at veniam cumque expedita vero eius.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, vitae accusantium at repellat sapiente esse inventore officia harum ipsam adipisci animi, ab minima cupiditate doloribus tempore, molestias reiciendis deserunt provident!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, explicabo! Optio, soluta odit consequuntur aspernatur ut quas praesentium, laudantium magni sed, excepturi necessitatibus quia rem amet delectus. Nemo, ipsum saepe.",
+        "assets/img/placeholder.webp",
+        "A black pug wearing a grey knitted jumper on a round yellow background"
+    ) }}
 {% endblock %}
