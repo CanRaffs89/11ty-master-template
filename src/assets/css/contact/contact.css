@@ -1,0 +1,16 @@
+.contact-container {
+    margin: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+    .contact-container {
+        margin: 40px;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        margin-bottom: 40px;
+    }
+}

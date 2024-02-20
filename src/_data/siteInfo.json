@@ -4,10 +4,9 @@
 	"phoneHome": "020 1234 5678",
 	"phoneMobile": "07123456789",
 	"address": {
-		"lineOne": "First Address Line",
-		"lineTwo": "Second Address Line",
+		"lineOne": "Design Agency",
+		"lineTwo": "123 High Street",
 		"city": "Portsmouth",
-		"county": "Hants",
 		"postcode": "PO1 0AA",
 		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
 	},

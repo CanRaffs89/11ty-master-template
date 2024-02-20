@@ -12,4 +12,36 @@ eleventyNavigation:
 {% block content %}
     {% import 'components/page-header/page-header.html' as macro %}
     {{ macro.pageHeader(title, description) }}
+    <div class="contact-container">
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>{{ siteInfo.address.lineOne }}</p>
+            <p>{{ siteInfo.address.lineTwo }}</p>
+            <p>{{ siteInfo.address.city }}</p>
+            <p>{{ siteInfo.address.postcode }}</p>
+            <p>{{ siteInfo.email }}</p>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="" method="POST">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="message">Message:</label>
+                        <textarea name="user_message" id="message" rows="10" cols="30"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send Message</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </div>
 {% endblock %}
