@@ -6,6 +6,8 @@
     --accent: #ccc;
     --text-light: #fff;
     --text-dark: #222;
+    --font-main: 'Arial', sans-serif;
+    --font-secondary: '';
 }
 
 /* General Styles */
@@ -23,7 +25,7 @@ html {
 
 body {
     width: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-main);
     font-weight: 400;
     background-color: var(--text-light);
     color: var(--text-dark);
