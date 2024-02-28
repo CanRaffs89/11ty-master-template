@@ -37,7 +37,9 @@ footer {
 }
 
 .footer-copyright > p {
-    color: var(--text-light);
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-top: 10px;
 }
 
 @media (max-width: 960px) {
