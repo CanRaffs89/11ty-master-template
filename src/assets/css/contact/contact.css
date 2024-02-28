@@ -22,6 +22,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    margin-top: 20px;
 }
 
 .contact-title {
@@ -46,6 +47,17 @@
     width: 50%;
     margin: 20px auto 0 auto;
     display: block;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--secondary);
+    color: var(--text-light);
+}
+
+.contact-form-button:hover {
+    background-color: var(--main);
+    color: var(--text-light);
 }
 
 @media (max-width: 960px) {
@@ -54,11 +66,15 @@
         flex-direction: column;
     }
 
-    .contact-info {
-        margin-bottom: 40px;
+    .contact-info > h2 {
+        margin: 20px 0;
     }
 
     .contact-info, .contact-form, .contact-form-button {
         width: 100%;
+    }
+
+    .contact-info-inner {
+        height: 200px;
     }
 }
