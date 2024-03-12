@@ -1,5 +1,5 @@
 ---
-title: 'Blog'
+title: 'Recent Blog Articles'
 description: 'Vitae qui eligendi ea, possimus enim eum voluptatibus laboriosam quia, totam sed quibusdam esse temporibus accusamus et natus expedita dolorem, ipsum magnam.'
 permalink: blog.html
 eleventyNavigation:
@@ -12,8 +12,18 @@ eleventyNavigation:
 {% block content %}
     {% import 'components/page-header/page-header.html' as macro %}
     {{ macro.pageHeader(title, description) }}
-    {% for post in collections.post %}
-        <h1>{{ post.title }}</h1>
-        {{ content | safe }}
-    {% endfor %}
+    
+    <ul>
+        {% for post in collections.post | reverse %}
+        <a style="color:black;" href="{{ post.url }}">
+            <li>
+                <h4>{{ post.data.date | postDate }}</h4>
+                <h1>{{ post.data.title }}</h1>
+                <h4>by {{ post.data.author }}</h4>
+                <img src="{{ post.data.image }}" alt="">
+            </li>
+        </a>
+        {% endfor %}
+    </ul>
+
 {% endblock %}
