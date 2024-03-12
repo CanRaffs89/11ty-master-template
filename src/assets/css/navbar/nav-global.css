@@ -89,10 +89,10 @@ nav {
         right: 3rem;
         z-index: 9999;
         border: 0;
-        background: no-repeat url("/assets/img/bars-solid.svg");
+        background: no-repeat url("/assets/img/icons/bars-solid.svg");
     }
 
     .nav-mobile-toggle[aria-expanded="true"] {
-        background: no-repeat url("/assets/img/xmark-solid.svg");
+        background: no-repeat url("/assets/img/icons/xmark-solid.svg");
     }
 }
