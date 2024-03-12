@@ -10,13 +10,15 @@
 </head>
 <body>
     {% set navPages = collections.all | eleventyNavigation %} <!-- Collects navlinks for use by the navbar and footer -->
-    {% include "components/navbar/navbar-centered.html" %} <!-- Can be swapped out for alternate navbar -->
+    {% include "components/navbar/navbar-spaced.html" %} <!-- Can be swapped out for alternate navbar -->
     <main>
         {% if permalink == 'index.html' %}
             {% include "components/header/header-main.html" %}
         {% endif %}
         <div class="content-container">
-            {% block content %}{% endblock %} <!-- Main site content goes here -->
+            {% block content %}
+              {{ content | safe }}
+            {% endblock %}
         </div>
         {% include "components/footer/footer.html" %}
     </main>

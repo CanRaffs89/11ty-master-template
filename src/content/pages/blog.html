@@ -1,0 +1,19 @@
+---
+title: 'Blog'
+description: 'Vitae qui eligendi ea, possimus enim eum voluptatibus laboriosam quia, totam sed quibusdam esse temporibus accusamus et natus expedita dolorem, ipsum magnam.'
+permalink: blog.html
+eleventyNavigation:
+    key: Blog
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    {% import 'components/page-header/page-header.html' as macro %}
+    {{ macro.pageHeader(title, description) }}
+    {% for post in collections.post %}
+        <h1>{{ post.title }}</h1>
+        {{ content | safe }}
+    {% endfor %}
+{% endblock %}
