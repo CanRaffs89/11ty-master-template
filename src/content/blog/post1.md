@@ -3,7 +3,7 @@ title: Lorem ipsum
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
 author: Can
 date: 2024-01-01
-image: /assets/img/placeholder.webp
+image: /assets/img/peter-james-eisenhaure-PbWJY0M5hRM-unsplash.jpg
 imageAlt: This is a blog image
 ---
 

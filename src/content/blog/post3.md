@@ -3,7 +3,7 @@ title: Qui magnam provident
 description: Qui magnam provident et, cupiditate possimus praesentium vitae illo vero dolores architecto laudantium esse at cum natus similique.
 author: Can
 date: 2024-01-03
-image: /assets/img/placeholder.webp
+image: /assets/img/peter-james-eisenhaure-PbWJY0M5hRM-unsplash.jpg
 imageAlt: This is a blog image
 ---
 

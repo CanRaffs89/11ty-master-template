@@ -13,16 +13,15 @@ eleventyNavigation:
     {% import 'components/page-header/page-header.html' as macro %}
     {{ macro.pageHeader(title, description) }}
     
-    <ul>
+    <ul class="blog-post-list">
         {% for post in collections.post | reverse %}
-        <a style="color:black;" href="{{ post.url }}">
-            <li>
-                <h4>{{ post.data.date | postDate }}</h4>
+            <li class="blog-post-card">
+                <img class="blog-post-card-img" src="{{ post.data.image }}" alt="">
                 <h1>{{ post.data.title }}</h1>
-                <h4>by {{ post.data.author }}</h4>
-                <img src="{{ post.data.image }}" alt="">
+                <p>{{ post.data.description }}</p>
+                <h4>{{ post.data.date | postDate }} - {{ post.data.author }}</h4>
+                <button><a href="{{ post.url }}">Read More</a></button>
             </li>
-        </a>
         {% endfor %}
     </ul>
 

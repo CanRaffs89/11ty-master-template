@@ -1,0 +1,33 @@
+.blog-post-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 100px;
+}
+
+.blog-post-card {
+    width: 32%;
+}
+
+.blog-post-card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media (max-width: 960px) {
+    .blog-post-list {
+        margin: 0 40px;
+    }
+
+    .blog-post-card {
+        width: 48%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 750px) {
+    .blog-post-card {
+        width: 100%;
+    } 
+}
