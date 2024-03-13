@@ -20,7 +20,7 @@ eleventyNavigation:
                 <h1>{{ post.data.title }}</h1>
                 <p>{{ post.data.description }}</p>
                 <h4>{{ post.data.date | postDate }} - {{ post.data.author }}</h4>
-                <button><a href="{{ post.url }}">Read More</a></button>
+                <button class="blog-post-card-button"><a href="{{ post.url }}">Read More</a></button>
             </li>
         {% endfor %}
     </ul>
