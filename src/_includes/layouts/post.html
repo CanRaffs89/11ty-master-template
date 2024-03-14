@@ -3,7 +3,9 @@ layout: 'layouts/base.html'
 ---
 
 <article>
-    <img src="{{ image }}" alt="{{ imageAlt }}">
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
+    <img class="blog-post-img" src="{{ image }}" alt="{{ imageAlt }}">
+    <div class="blog-post-content">
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+    </div>
 </article>
