@@ -10,7 +10,7 @@
 </head>
 <body>
     {% set navPages = collections.all | eleventyNavigation %} <!-- Collects navlinks for use by the navbar and footer -->
-    {% include "components/navbar/navbar-spaced.html" %} <!-- Can be swapped out for alternate navbar -->
+    {% include "components/navbar/navbar-centered.html" %} <!-- Can be swapped out for alternate navbar -->
     <main>
         {% if permalink == 'index.html' %}
             {% include "components/header/header-main.html" %}
