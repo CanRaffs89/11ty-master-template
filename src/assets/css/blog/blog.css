@@ -7,9 +7,13 @@
 
 .blog-post-card {
     width: 32%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.blog-post-card > h1, h4 {
+.blog-post-card-text > h2, h4 {
     margin: 15px 0;
 }
 
@@ -26,6 +30,10 @@
     padding: 10px 15px;
 }
 
+.blog-post-card-button:hover {
+    background: var(--accent);
+}
+
 @media (max-width: 960px) {
     .blog-post-list {
         margin: 0 40px;
@@ -34,6 +42,7 @@
     .blog-post-card {
         width: 48%;
         margin-bottom: 40px;
+        justify-content: space-evenly;
     }
 }
 

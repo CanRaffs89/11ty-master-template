@@ -14,9 +14,11 @@ permalink: 'blog.html'
         {% for post in collections.post | reverse %}
             <li class="blog-post-card">
                 <img class="blog-post-card-img" src="{{ post.data.image }}" alt="">
-                <h1>{{ post.data.title }}</h1>
-                <p>{{ post.data.description }}</p>
-                <h4>{{ post.data.date | postDate }} - {{ post.data.author }}</h4>
+                <div class="blog-post-card-text">
+                    <h2>{{ post.data.title }}</h2>
+                    <p>{{ post.data.description }}</p>
+                    <h4>{{ post.data.date | postDate }} - {{ post.data.author }}</h4>
+                </div>
                 <button class="blog-post-card-button"><a href="{{ post.url }}">Read More</a></button>
             </li>
         {% endfor %}
