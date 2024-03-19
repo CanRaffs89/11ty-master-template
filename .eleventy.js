@@ -8,6 +8,7 @@ module.exports = function(config) {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
     config.addPassthroughCopy('./src/assets');
+    config.addPassthroughCopy('./src/admin');
     return {
         dir: {
             input: 'src',
