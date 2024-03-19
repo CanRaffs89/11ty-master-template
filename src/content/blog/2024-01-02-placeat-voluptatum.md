@@ -3,7 +3,7 @@ title: Placeat voluptatum
 description: Placeat voluptatum quos consequatur omnis doloremque ipsam neque.
 author: Can
 date: 2024-01-02
-image: /assets/img/ansgar-scheffold-HUk2W9fa-Jw-unsplash.jpg
+image: /assets/blog/ansgar-scheffold-HUk2W9fa-Jw-unsplash.jpg
 imageAlt: This is a blog image
 ---
 

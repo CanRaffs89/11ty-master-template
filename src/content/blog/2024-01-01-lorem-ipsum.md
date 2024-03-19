@@ -4,7 +4,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
 author: Can
 date: 2024-01-01
 tags: 'post'
-image: /assets/img/peter-james-eisenhaure-PbWJY0M5hRM-unsplash.jpg
+image: /assets/blog/peter-james-eisenhaure-PbWJY0M5hRM-unsplash.jpg
 imageAlt: This is a blog image
 ---
 
