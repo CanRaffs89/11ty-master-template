@@ -40,10 +40,16 @@
 }
 
 .blog-post-card-button {
-    border: none;
+    text-align: center;
     background: var(--main);
-    font-size: 1rem;
     padding: 10px 15px;
+}
+
+.blog-post-card-button > button {
+    font-size: 1rem;
+    color: var(--text-light);
+    border: none;
+    background: none;
 }
 
 .blog-post-card-button:hover {
