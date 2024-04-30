@@ -1,5 +1,6 @@
 {% extends "layouts/base.html" %}
 
+{% block content %}
 <article>
     <img class="blog-post-img" src="{{ image }}" alt="{{ imageAlt }}">
     <div class="blog-post-content">
@@ -7,3 +8,4 @@
         {{ content | safe }}
     </div>
 </article>
+{% endblock %}
