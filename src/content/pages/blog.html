@@ -16,7 +16,7 @@ eleventyNavigation:
     <ul class="blog-post-list">
         {% for post in collections.post | reverse %}
             <li class="blog-post-card">
-                <img class="blog-post-card-img" src="{{ post.data.image }}" alt="">
+                <img class="blog-post-card-img" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
                 <h2>{{ post.data.title }}</h2>
                 <p>{{ post.data.description }}</p>
                 <h4>{{ post.data.date | postDate }} - {{ post.data.author }}</h4>
