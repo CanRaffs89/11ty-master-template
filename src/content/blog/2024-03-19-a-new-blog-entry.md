@@ -1,5 +1,5 @@
 ---
-title: A New Blog Entry
+title: A Brand New Blog Entry
 description: The first blog entry from the new CMS
 author: Can
 date: 2024-03-19T10:56:40.139Z
