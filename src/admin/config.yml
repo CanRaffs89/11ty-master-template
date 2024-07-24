@@ -5,8 +5,7 @@ backend:
 media_folder: "public/assets/blog"
 public_folder: "/assets/blog"
 
-site_url: https://eloquent-lolly-9f3047.netlify.app/
-display_url: site_url
+display_url: https://eloquent-lolly-9f3047.netlify.app/
 
 collections:
   - name: "blog"
